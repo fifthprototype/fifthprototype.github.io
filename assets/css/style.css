@@ -172,7 +172,15 @@
 
 	    @media only screen and (max-width: 320px) {
 	    	.header .book-now-button {
-	    		font-size: 12px;
+	    		font-size: 10px !important;
+	    	}
+
+	    	#waku-waku-logo a {
+	    		font-size: 12px !important;
+	    	}
+
+	    	#waku-waku-logo span {
+	    		font-size: 12px !important;
 	    	}
 	    }
 
@@ -868,6 +876,21 @@
 	    @media only screen and (max-width: 991px) {
 	    	.order-buttons-modal {
 	    		margin-top: 200px !important;
+	    	}
+	    }
+
+	    @media only screen and (max-width: 452px) {
+	    	.order-buttons-modal {
+	    		font-size: 14px !important;
+	    		margin: auto;
+
+	    	}
+	    }
+
+	    @media only screen and (max-width: 346px) {
+	    	.order-buttons-modal {
+	    		display: block;
+	    		margin: 15px auto !important;
 	    	}
 	    }
 
