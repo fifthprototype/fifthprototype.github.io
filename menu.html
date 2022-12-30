@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Design 12 | Menu</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+	<div id="address-header" style="background: #000; min-height: 29px; top: 0; bottom: auto; position: fixed; width: 100%; z-index: 997; border-bottom: 1px solid white;">
+	    <div class="container">
+	    	<div class="row">
+		        <div class="col">
+		          <!-- <a href="#" style="font-size: 18px; text-align: left;"><i class="fa-regular fa-envelope"></i></a> -->
+		          <a class="enable-accessibility" href="#" style="font-size: 12px !important; font-weight: 300; color: white; line-height: 80%;"><span style="font-size: 12px; letter-spacing: 1px; line-height: 100%; font-family: 'Poppins', sans-serif;">enable accessibility</span></a>
+		        </div>
+
+		        <div class="col" style="font-family: 'Oswald', sans-serif; right: 0; left: auto; text-align: right;">
+	    			<select class="country-list" style="color: white;background: transparent; border: none; font-size: 12px; font-family: 'Poppins', sans-serif;">
+	    				<option style="color: black;">United Kingdom</option>
+	    				<option style="color: black;">United States of America</option>
+	    				<option style="color: black;">Germany</option>
+	    				<option style="color: black;">Netherland</option>
+	    			</select>
+		        </div>
+	    	</div>
+	    </div>
+	</div>
+
+
+
+	<header id="header" class="header fixed-top d-flex align-items-center">
+	    <div class="container d-flex align-items-center justify-content-between">
+	      <a href="#" class="logo d-flex align-items-center me-auto me-lg-0">
+	        <!-- <img style="max-height: 65px;" class="" src="" alt=""> -->
+	        <h1 id="waku-waku-logo">
+	        		<a href="./index.html">Design <span>12.</span></a>
+	        </h1>
+
+	      </a>
+
+	      <nav id="navbar" class="navbar">
+	        <ul>
+	          <li><a href="./index.html">Home <i class="fa-solid fa-bahai"></i></a></li>
+	          <!-- <li><a href="#">Menu <i class="fa-solid fa-bahai"></i></a></li> -->
+	          <li><a href="./restaurant.html">Restaurant <i class="fa-solid fa-bahai"></i></a></li>
+	          <li><a href="#">Cook Waku Waku <i class="fa-solid fa-bahai"></i></a></li>
+	          <li><a href="./contact-us.html">Contact Us <i class="fa-solid fa-bahai"></i></a></li>
+	          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-bahai"></i></a>
+	            <ul>
+	              <li><a href="#">Drop Down 1</a></li>
+	              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="fa-solid fa-bahai"></i></a>
+	                <ul>
+	                  <li><a href="#">Deep Drop Down 1</a></li>
+	                  <li><a href="#">Deep Drop Down 2</a></li>
+	                  <li><a href="#">Deep Drop Down 3</a></li>
+	                  <li><a href="#">Deep Drop Down 4</a></li>
+	                  <li><a href="#">Deep Drop Down 5</a></li>
+	                </ul>
+	              </li>
+	              <li><a href="#">Drop Down 2</a></li>
+	              <li><a href="#">Drop Down 3</a></li>
+	              <li><a href="#">Drop Down 4</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </nav>
+
+	      <div id="hidden-on-navbar" class="col-lg-1"></div>
+
+	      <a class="book-now-button" href="#">delivery</a>
+	      <a class="book-now-button" href="#">click & collect</a>
+	      <i class="mobile-nav-toggle mobile-nav-show bi bi-list-nested"></i>
+	      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+	    </div>
+  	</header>
+
+  	<section>
+  		<div class="">
+  			<div class="landing-page-menu">
+  				<!-- <center> -->
+  					<h3 class="landing-texts">Our Menu</h3>
+  				<!-- </center> -->
+  			</div>
+  		</div>
+  	</section>
+
+  	<section style="margin-top: 100px; border-top: 2px solid red; border-bottom: 2px solid red; margin-bottom: 100px;">
+  		<div class="container">
+  			<div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+  				<div class="col-lg-6">
+  					<h6 class="menu-title-descriptions">
+  						New Menu 1st
+  					</h6>
+  					<h6 class="menu-descriptions">
+  						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend, lorem nec vehicula hendrerit, nisl tortor ullamcorper ligula, sed fermentum mauris mauris ut urna. Sed eu felis gravida, dignissim tellus ut, finibus metus.
+  					</h6>
+  					<br/>
+  					<img class="img-fluid" src="https://img.freepik.com/premium-photo/isolated-drink-avocado-smoothie-half-fruit-isolated-white-with-clipping-path_124717-651.jpg">
+  				</div>
+
+  				<div class="col-lg-6">
+  					<img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Cheeseburger.png">
+  					<br/>
+  					<h6 class="menu-title-descriptions">
+  						New Menu 2nd
+  					</h6>
+  					<h6 class="menu-descriptions">
+  						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend, lorem nec vehicula hendrerit, nisl tortor ullamcorper ligula, sed fermentum mauris mauris ut urna. Sed eu felis gravida, dignissim tellus ut, finibus metus.
+  					</h6>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section style="margin-bottom: 100px;">
+
+  		<div class="portfolio-menu mt-2 mb-4">
+            <ul>
+               <li class="gallery-selection-buttons active" data-filter="*" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 0px;">All</li>
+               <li class="gallery-selection-buttons" data-filter=".breakfast" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Breakfast</li>
+               <li class="gallery-selection-buttons" data-filter=".lunch" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Lunch</li>
+               <li class="gallery-selection-buttons text" data-filter=".dinner" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Dinner</li>
+               <li class="gallery-selection-buttons text" data-filter=".smoothies" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Smoothies</li>
+               <li class="gallery-selection-buttons text" data-filter=".drinks" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Drinks</li>
+            </ul>
+         </div>
+
+  		<div class="container">
+  			<div class="portfolio-item row">
+  				<!-- <div style="display: inline-table !important;"> -->
+
+  				<div class="col breakfast">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">First Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <br/>
+					    <center>
+					    	<a href="#" class="open-modal-menus" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							  Show Details <i class="fa-solid fa-angle-right"></i>
+							</a>
+					    </center>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col lunch">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Second Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <br/>
+					    <center>
+					    	<a href="#" class="open-modal-menus" data-bs-toggle="modal" data-bs-target="#secondexampleModal">
+							  Show Details <i class="fa-solid fa-angle-right"></i>
+							</a>
+					    </center>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col dinner">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Third Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Fourth Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Fifth Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Sixth Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Seventh Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<div class="col">
+  					<div class="card" style="width: 18rem; border: none;">
+					  <img src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000" class="card-img-top" alt="...">
+					  <div class="card-body">
+					  	<h6 class="menu-titles">Eight Menu</h6>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  </div>
+					</div>
+  				</div>
+
+  				<!-- </div> -->
+  			</div>
+  		</div>
+  	</section>
+
+  	<footer style="background: black;">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-2">
+  					<div class="footer-margins">
+	  					<h6 class="footer-titles">Our Business</h6>
+	  					<div style="display: grid;">
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  					</div>
+  					</div>
+  				</div>
+
+  				<div class="col-lg-2">
+  					<div class="footer-margins">
+	  					<h6 class="footer-titles">Our Menu</h6>
+	  					<div style="display: grid;">
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  					</div>
+  					</div>
+  				</div>
+
+  				<div class="col-lg-2">
+  					<div class="footer-margins">
+	  					<h6 class="footer-titles">Our Responsibilities</h6>
+	  					<div style="display: grid;">
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  						<a class="footer-links" href="#">Testing</a>
+	  					</div>
+  					</div>
+  				</div>
+
+  				<div class="col-lg-3">
+  					<div class="footer-margins">
+	  					<h6 class="footer-titles">FaQs</h6>
+	  					<div style="display: grid;">
+	  						<a class="footer-links" href="#"></a>
+	  					</div>
+  					</div>
+  				</div>
+
+  				<div class="col-lg-3">
+  					<div class="footer-margins">
+  						<div>
+  							<a class="footer-icons" href="#"><i class="fa-brands fa-twitter"></i></a>
+  							<a class="footer-icons" style="padding: 10px 17px;" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  							<a class="footer-icons" href="#"><i class="fa-brands fa-instagram"></i></a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<!-- copyright -->
+  			<div style="padding: 15px;">
+  				<center>
+  					<h6 class="copyright-section">&copy; 2022 All Rights Reserved by <a href="#">Someone Famous</a></h6>
+  				</center>
+  			</div>
+
+  		</div>
+  	</footer>
+
+  	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title fs-5" id="exampleModalLabel" style="text-transform: lowercase;">First Menu</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="col-lg-5">
+	        		<img class="img-fluid" src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000">
+	        	</div>
+	        	<div class="col-lg-5">
+	        		<h3 class="menu-modal-titles">First Menu</h3>
+	        		<h6 class="menu-modal-descriptions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et volutpat sem. Nulla at mi eros. Ut vulputate placerat lacinia. In quis turpis sagittis, pharetra velit ut, efficitur erat. Sed sed congue felis. Ut sit amet ante convallis est lobortis fringilla.</h6>
+	        	</div>
+	        </div>
+	        <br/>
+	        <br/>
+	        <div class="col">
+	        	<center>
+		        	<a class="order-buttons-modal" href="#">Order Click + Collect</a>
+		        	<a class="order-buttons-modal" href="#">Order Delivery</a>
+	        	</center>
+	        </div>
+	        <br/>
+	        <br/>
+
+	        <hr style="color: #000;">
+
+	        <div class="accordion" id="accordionExample">
+			  <div class="accordion-item">
+			    <h2 class="accordion-header" id="headingOne">
+			      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        allergens + nutritional information
+			      </button>
+			    </h2>
+			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			      <div class="accordion-body">
+			      	<div class="row">
+			      		<div class="col-lg-4">
+			        		<h6 class="collapse-modal-titles">Allergens</h6>
+			      			<p class="collapse-modal-descriptions">
+			      				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et volutpat sem. Nulla at mi eros. 
+			      			</p>
+			      		</div>
+
+			      		<div class="col-lg-3">
+			      			<h6 class="collapse-modal-titles">Nutritional Information</h6>
+			      			<div style="display: grid;">
+			      				<a class="nutritional-informations">Energy (kCal)</a>
+			      				<a class="nutritional-informations">Energy (Kj)</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      			</div>
+			      		</div>
+
+			      		<div class="col-lg-2">
+			      			<h6 class="nutrition-info">Per Saving</h6>
+			      			<div style="display: grid;">
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">3,405</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      			</div>
+			      		</div>
+
+			      		<div class="col-lg-2">
+			      			<h6 class="nutrition-info">Per 100g</h6>
+			      			<div style="display: grid;">
+			      				<a class="per-saving">107</a>
+			      				<a class="per-saving">446</a>
+			      				<a class="per-saving">11.51</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      			</div>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<br/>
+			<br/>
+
+	        <button type="button" class="btn-menu-close-modal-descriptions" data-bs-dismiss="modal">Close</button>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Second Modal -->
+	<div class="modal fade" id="secondexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title fs-5" id="exampleModalLabel" style="text-transform: lowercase;">Second Menu</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="col-lg-5">
+	        		<img class="img-fluid" src="https://img.freepik.com/premium-vector/acai-smoothie-bowl-with-banana-blackberry-cereal-raspberry-almond-top-viewvegan-smoothie-bowl_549497-162.jpg?w=2000">
+	        	</div>
+	        	<div class="col-lg-5">
+	        		<h3 class="menu-modal-titles">Second Menu</h3>
+	        		<h6 class="menu-modal-descriptions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et volutpat sem. Nulla at mi eros. Ut vulputate placerat lacinia. In quis turpis sagittis, pharetra velit ut, efficitur erat. Sed sed congue felis. Ut sit amet ante convallis est lobortis fringilla.</h6>
+	        	</div>
+	        </div>
+	        <br/>
+	        <br/>
+	        <div class="col">
+	        	<center>
+		        	<a class="order-buttons-modal" href="#">Order Click + Collect</a>
+		        	<a class="order-buttons-modal" href="#">Order Delivery</a>
+	        	</center>
+	        </div>
+	        <br/>
+	        <br/>
+
+	        <hr style="color: #000;">
+
+	        <div class="accordion" id="accordionExample">
+			  <div class="accordion-item">
+			    <h2 class="accordion-header" id="headingOne">
+			      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        allergens + nutritional information
+			      </button>
+			    </h2>
+			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			      <div class="accordion-body">
+			      	<div class="row">
+			      		<div class="col-lg-4">
+			        		<h6 class="collapse-modal-titles">Allergens</h6>
+			      			<p class="collapse-modal-descriptions">
+			      				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et volutpat sem. Nulla at mi eros. 
+			      			</p>
+			      		</div>
+
+			      		<div class="col-lg-3">
+			      			<h6 class="collapse-modal-titles">Nutritional Information</h6>
+			      			<div style="display: grid;">
+			      				<a class="nutritional-informations">Energy (kCal)</a>
+			      				<a class="nutritional-informations">Energy (Kj)</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      				<a class="nutritional-informations">Energy</a>
+			      			</div>
+			      		</div>
+
+			      		<div class="col-lg-2">
+			      			<h6 class="nutrition-info">Per Saving</h6>
+			      			<div style="display: grid;">
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">3,405</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      			</div>
+			      		</div>
+
+			      		<div class="col-lg-2">
+			      			<h6 class="nutrition-info">Per 100g</h6>
+			      			<div style="display: grid;">
+			      				<a class="per-saving">107</a>
+			      				<a class="per-saving">446</a>
+			      				<a class="per-saving">11.51</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      				<a class="per-saving">813</a>
+			      			</div>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<br/>
+			<br/>
+
+	        <button type="button" class="btn-menu-close-modal-descriptions" data-bs-dismiss="modal">Close</button>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('header').mouseenter(function () {
+            $('.header h1').css("visibility", "visible");
+            $(this).css('background', 'black');
+        });
+        $('header').mouseleave(function() {
+        	$('.header h1').css("visibility", "hidden");
+            $(this).css('background', 'none');
+        });
+	})
+</script>
+
+<script type="text/javascript">
+	const section1 = document.querySelector('header');
+	const headerLogo = document.getElementById('waku-waku-logo');
+
+	window.addEventListener('scroll', () => {
+	  // let y = 1 + (window.scrollY || window.pageYOffset) / 150
+	  // y = y < 1 ? 1 : y
+	  // const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+	  section1.style.backgroundColor = 'black';
+	  headerLogo.style.visibility = 'visible';
+	})
+</script>
+
+<script type="text/javascript">
+	$('.portfolio-menu ul li').click(function(){
+ 	$('.portfolio-menu ul li').removeClass('active');
+ 	$(this).addClass('active');
+ 	
+ 	var selector = $(this).attr('data-filter');
+ 	$('.portfolio-item').isotope({
+ 		filter:selector
+ 	});
+ 	return  false;
+	 });
+	 $(document).ready(function() {
+	 var popup_btn = $('.popup-btn');
+	 popup_btn.magnificPopup({
+	 type : 'image',
+	 gallery : {
+	 	enabled : true
+	 }
+	 });
+ 	});
+</script>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+	  "use strict";
+
+	  /**
+	   * Sticky header on scroll
+	   */
+	  const selectHeader = document.querySelector('#header');
+	  if (selectHeader) {
+	    document.addEventListener('scroll', () => {
+	      window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+	    });
+	  }
+
+	  /**
+	   * Navbar links active state on scroll
+	   */
+	  let navbarlinks = document.querySelectorAll('#navbar a');
+
+	  function navbarlinksActive() {
+	    navbarlinks.forEach(navbarlink => {
+
+	      if (!navbarlink.hash) return;
+
+	      let section = document.querySelector(navbarlink.hash);
+	      if (!section) return;
+
+	      let position = window.scrollY + 200;
+
+	      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+	        navbarlink.classList.add('active');
+	      } else {
+	        navbarlink.classList.remove('active');
+	      }
+	    })
+	  }
+	  window.addEventListener('load', navbarlinksActive);
+	  document.addEventListener('scroll', navbarlinksActive);
+
+	  /**
+	   * Mobile nav toggle
+	   */
+	  const mobileNavShow = document.querySelector('.mobile-nav-show');
+	  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+
+	  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+	    el.addEventListener('click', function(event) {
+	      event.preventDefault();
+	      mobileNavToogle();
+	    })
+	  });
+
+	  function mobileNavToogle() {
+	    document.querySelector('body').classList.toggle('mobile-nav-active');
+	    mobileNavShow.classList.toggle('d-none');
+	    mobileNavHide.classList.toggle('d-none');
+	  }
+
+	  /**
+	   * Hide mobile nav on same-page/hash links
+	   */
+	  document.querySelectorAll('#navbar a').forEach(navbarlink => {
+
+	    if (!navbarlink.hash) return;
+
+	    let section = document.querySelector(navbarlink.hash);
+	    if (!section) return;
+
+	    navbarlink.addEventListener('click', () => {
+	      if (document.querySelector('.mobile-nav-active')) {
+	        mobileNavToogle();
+	      }
+	    });
+
+	  });
+
+	  /**
+	   * Toggle mobile nav dropdowns
+	   */
+	  const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+
+	  navDropdowns.forEach(el => {
+	    el.addEventListener('click', function(event) {
+	      if (document.querySelector('.mobile-nav-active')) {
+	        event.preventDefault();
+	        this.classList.toggle('active');
+	        this.nextElementSibling.classList.toggle('dropdown-active');
+
+	        let dropDownIndicator = this.querySelector('.dropdown-indicator');
+	        dropDownIndicator.classList.toggle('bi-chevron-up');
+	        dropDownIndicator.classList.toggle('bi-chevron-down');
+	      }
+	    })
+	  });
+
+	});
+</script>
+
+</body>
+</html>
