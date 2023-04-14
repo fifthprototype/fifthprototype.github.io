@@ -826,7 +826,24 @@
 
 	    .portfolio-item {
 	    	width: 100%;
+	    	max-width: 100%;
+	    	flex-wrap: wrap;
+	    	margin: auto !important;
 	    	height: auto;
+	    	display: flex !important;
+	    	justify-content: center;
+	    	-webkit-justify-content: center;
+	    	-moz-justify-content: center;
+	    	-ms-justify-content: center;
+	    	flex-wrap: wrap;
+	    }
+
+	    .portfolio-item .card {
+	    	margin: auto !important;
+	    	padding: auto !important;
+	    	width: 324px;
+	    	border: none !important;
+	    	justify-content: center !important;
 	    }
 
 	    .portfolio-menu {
@@ -879,11 +896,45 @@
 	    	}
 	    }
 
+	    @media only screen and (max-width: 767px) {
+	    	/*.portfolio-item .card {
+	    		justify-content: center;
+	    		align-items: center;
+	    		align-content: center;
+	    		align-self: center;
+	    		align-tracks: center;
+	    		text-align: center;
+	    		left: 0 !important;
+	    		right: 0 !important;
+	    		margin: auto !important;
+	    	}*/
+
+	    	.portfolio-item .card {
+	    		display: flex;
+	    		max-width: 250px !important;
+/*	    		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));*/
+/*				grid-template-columns: 200px;*/
+	    	}
+	    }
+
+	    @media only screen and (max-width: 523px) {
+	    	.portfolio-item .card {
+	    		max-width: 210px !important;
+	    	}
+	    }
+
 	    @media only screen and (max-width: 452px) {
 	    	.order-buttons-modal {
 	    		font-size: 14px !important;
 	    		margin: auto;
 
+	    	}
+	    }
+
+	    @media only screen and (max-width: 443px) {
+	    	.portfolio-item .card {
+	    		width: auto !important;
+	    		display: inline;
 	    	}
 	    }
 
